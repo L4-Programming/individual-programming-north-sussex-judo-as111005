@@ -5,7 +5,7 @@
   --sky-200: rgb(186 230 253);
   --sky-300: rgb(125 211 252);
   --sky-500: #0ea5e9;
-  --sky-600: #0284c7;
+  --sky-600: #000000;
   --sky-900: #0c4a6e;
   --slate-900: #0f172a;
   --slate-500: #64748b;
@@ -53,6 +53,7 @@ body {
 /*
   6. Improve media defaults
 */
+
 img,
 picture,
 video,
