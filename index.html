@@ -1,24 +1,93 @@
 <!DOCTYPE html>
 <html lang="en">
   <head>
+    <!-- added in a sign in option-->
+    <select id="submit-button">
+  <option value="email">Sign in with Email</option>
+</select>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>North Sussex Judo</title>
+    <link rel="stylesheet" href="./styles.css" />
   </head>
+   <body>
+    
+    <!-- this code defines the size of the picture used as for the logo-->
+    <style>
+      .display{
+        height:  150px;
+        width: 148px;
+        background-attachment: fixed;
+      }
+    </style>   
 
-  <body>
+<!-- added in the logo for the website this will display the image at the top rigth of the website-->
+<img
+class="mobile display"
+src="./assets/judo.jpg"
+alt="North Sussex Judo"
+/>
     <h1>North Sussex Judo</h1>
 
-    <div class="wrapper">
-      <form id="form">
-        <h2>Cost Calculator</h2>
-        <hr />
+    <div class="form-fields">
 
+      <form id="form">
+        
+        <h2>Entry Details</h2>
+        <hr />
+        <!-- added in strings, these allow the user to see what data to put in the form fields-->
         <div class="inputs-wrapper">
           <label for="athlete-name">Athlete Name</label>
-          <input type="text" id="athlete-name" name="athlete-name" required />
+          <input 
+          type="text"
+          id="athlete name" 
+          name="athlete name"
+          type="name" 
+          class="form-input" 
+          placeholder="Your Name"
+          required />
 
-          <div class="training-plan-wrapper" role="radiogroup">
+          <div>
+            <label for="current-weight">Current Weight (kg)</label>
+            <input 
+            type="number" 
+            id="current weight" 
+            name="current weight"
+            type="number"
+            class="form-input"
+            placeholder="Your Weight in kg" 
+            />
+          </div>
+
+          <div>
+            <label for="competitions-entered"
+              >Number of Competitions Entered this Month (Optional)</label
+            >
+            <input 
+            type="number" 
+            id="competitions entered" 
+            name="ccompetitions entered"
+            type="number"
+            class="form-input"
+            placeholder="Competitions entered"
+            />
+          </div>
+
+          <div>
+            <label for="private-coaching-hours"
+              >Number of Hours of Private Coaching (Optional)</label>
+            <input
+             type="number" 
+             id="private-coaching hours"
+             name="private-coaching hours" 
+             type="number"
+             class="form-input"
+             placeholder="Private Coaching Hours"
+             
+             />
+          </div>
+ <div class="training-plan-wrapper" role="radiogroup">
+  <!-- Moved the Training Plan -->
             <label>Training Plan</label>
             <div class="radio-button-field">
               <input
@@ -48,25 +117,6 @@
           </div>
 
           <div>
-            <label for="current-weight">Current Weight (kg)</label>
-            <input type="number" id="current-weight" name="current-weight" />
-          </div>
-
-          <div>
-            <label for="competitions-entered"
-              >Number of Competitions Entered this Month (Optional)</label
-            >
-            <input type="number" name="competitions-entered" />
-          </div>
-
-          <div>
-            <label for="private-coaching-hours"
-              >Number of Hours of Private Coaching (Optional)</label
-            >
-            <input type="number" name="private-coaching-hours" />
-          </div>
-
-          <div>
             <button type="submit" id="submit-button">Submit</button>
           </div>
         </div>
@@ -78,6 +128,11 @@
 
         <div class="outputs-wrapper">
           <div id="output" class="output-field">Awaiting Input...</div>
+          <div class="form-section mobile-hidden">
+        <img
+          src="./assets/judo.jpg"
+        />
+      </div>
         </div>
       </div>
     </div>
