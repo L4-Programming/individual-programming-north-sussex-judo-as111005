@@ -48,6 +48,10 @@ body {
   font-family: Arial, Helvetica, sans-serif;
   color: var(--slate-900);
   padding: 2rem;
+  background-color: #000; 
+  color: #fff; 
+  margin: 0;
+  padding: 20px;
 }
 
 /*
@@ -61,6 +65,11 @@ canvas,
 svg {
   display: block;
   max-width: 100%;
+img.mobile.display {
+  width: 120px;
+  float: right; 
+  border: 3px solid red; 
+  border-radius: 10px;
 }
 
 /*
@@ -84,6 +93,11 @@ h4,
 h5,
 h6 {
   overflow-wrap: break-word;
+h1 {
+  color: red; 
+  font-size: 2.5rem;
+  text-align: left;
+  margin-top: 10px;
 }
 
 /* Layout ------------------- */
@@ -93,9 +107,13 @@ form {
   flex-direction: column;
   flex: 1 0 auto;
   padding: 1rem;
+h2 {
+  color: red;
+  margin-bottom: 5px;
 }
 
 .athlete-info {
+.form-fields {
   display: flex;
   flex-direction: column;
   flex: 1 0 auto;
@@ -106,6 +124,8 @@ form {
   height: 150px;
   width: 148px;
   background-attachment: fixed;
+  gap: 30px;
+  margin-top: 20px;
 }
 
 .inputs-wrapper,
@@ -114,12 +134,26 @@ form {
   flex-direction: column;
   padding: 16px 128px;
   flex: 1 0 auto;
+form {
+  background-color: #111; 
+  padding: 20px;
+  border-radius: 12px;
+  width: 350px;
+  border: 2px solid red;
 }
 
 .inputs-wrapper {
   background-color: var(--amber-100);
   border-radius: 8px;
   justify-content: center;
+.form-input {
+  width: 100%;
+  padding: 10px;
+  margin: 8px 0 16px 0;
+  background-color: #222;
+  border: 2px solid red;
+  border-radius: 6px;
+  color: white;
 }
 
 .outputs-wrapper {
@@ -128,6 +162,10 @@ form {
   padding: 16px;
   border-radius: 8px;
   flex: 1 0 auto;
+label {
+  font-weight: bold;
+  margin-bottom: 5px;
+  display: block;
 }
 
 .training-plan-wrapper {
@@ -142,6 +180,7 @@ form {
   max-width: 100%;
   margin: 0 auto;
   padding: 0 32px 32px;
+  margin-bottom: 20px;
 }
 
 /* Atoms ------------------- */
@@ -160,6 +199,8 @@ h2 {
 
 hr {
   margin-bottom: 16px;
+.radio-button-field {
+  margin-top: 8px;
 }
 
 label {
@@ -168,19 +209,32 @@ label {
   letter-spacing: 0.5px;
   color: var(--slate-500);
   margin-bottom: 2px;
+.radio-button-field label {
+  font-weight: normal;
 }
 
 input,
 select {
+#submit-button {
   width: 100%;
   padding: 8px 16px;
   border: 1px solid var(--slate-500);
   border-radius: 4px;
   margin-bottom: 16px;
+  padding: 12px;
+  background-color: red;
+  color: black;
+  border: none;
+  border-radius: 6px;
+  font-size: 1rem;
+  cursor: pointer;
+  font-weight: bold;
 }
 
 select {
   padding: 8px;
+#submit-button:hover {
+  background-color: #cc0000; 
 }
 
 button {
@@ -201,6 +255,12 @@ button:active {
   transform: translate(4px) translate(4px);
   background-color: var(--sky-600);
   box-shadow: var(--sky-900) 0px 0px 0px;
+.athlete-info {
+  background-color: #111;
+  padding: 20px;
+  width: 350px;
+  border-radius: 12px;
+  border: 2px solid red;
 }
 
 .information-field {
@@ -220,6 +280,11 @@ button:active {
   width: 1px;
   height: 1px;
   overflow: hidden;
+  background-color: #222;
+  padding: 15px;
+  border-radius: 6px;
+  border: 2px solid red;
+  min-height: 100px;
 }
 .radio-button-field label {
   display: inline-block;
@@ -238,4 +303,8 @@ button:active {
 .radio-button-field input:checked + label {
   background-color: var(--sky-600);
   color: var(--sky-50);
+
+
+hr {
+border: 1px solid red;
 }
