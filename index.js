@@ -32,11 +32,16 @@ form.addEventListener("submit", function (event) {
     return;
   }
 
+  const TRAINING_WEEKS = 4;
+  const BEGINNER_FEE = 25;
+  const INTERMEDIATE_FEE = 30;
+  const ELITE_FEE = 35;
+
   // This code define the cost of each class
   const planCosts = {
-    beginner: 25 * 4, // 4 weeks per month
-    intermediate: 30 * 4, //ask question about price vs the ammount of lessons
-    elite: 35 * 4,
+    beginner: BEGINNER_FEE * TRAINING_WEEKS,
+    intermediate: INTERMEDIATE_FEE * TRAINING_WEEKS,
+    elite: ELITE_FEE * TRAINING_WEEKS,
   };
 
   const privateCoachingCost = privateHours * 9.5;
