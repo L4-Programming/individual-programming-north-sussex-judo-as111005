@@ -47,19 +47,19 @@ h2 {
   margin-bottom: 5px;
 }
 
+label {
+  font-weight: bold;
+  margin-bottom: 5px;
+  display: block;
+}
+
+/* CLASS NAMES */
+
 .form-fields {
   display: flex;
   justify-content: center;
   gap: 30px;
   margin-top: 20px;
-}
-
-form {
-  background-color: #111;
-  padding: 20px;
-  border-radius: 12px;
-  width: 350px;
-  border: 2px solid red;
 }
 
 .form-input {
@@ -72,10 +72,11 @@ form {
   color: white;
 }
 
-label {
-  font-weight: bold;
-  margin-bottom: 5px;
-  display: block;
+.mobile-display {
+  width: 120px;
+  float: left;
+  border: 3px solid red;
+  border-radius: 10px;
 }
 
 .training-plan-wrapper {
