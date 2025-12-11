@@ -4,15 +4,14 @@ body {
   margin: 0;
   padding: 20px;
 }
+/* Background image*/
 body {
-  font-family: Arial, Helvetica, sans-serif;
   background-image: url("./assets/judo2.jpg");
   background-size: cover;
   background-position: center;
-  background-repeat: no-repeat;
   color: #fff;
   margin: 0;
-  padding: 20px;
+  padding: 10px;
 }
 
 body::before {
