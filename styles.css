@@ -123,3 +123,16 @@ label {
 hr {
   border: 1px solid red;
 }
+
+html {
+  scroll-behavior: smooth;
+}
+
+/* This code allows website to move accordlingly to the device type*/
+/* <600px,phone  768px, tablet 992px,laptos 1200px large monitors */
+
+@media (max-width: 600px) {
+  .wrapper-main {
+    width: 100%;
+  }
+}
