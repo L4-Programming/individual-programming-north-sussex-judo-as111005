@@ -7,11 +7,10 @@ body {
 /* Background image*/
 body {
   background-image: url("./assets/judo2.jpg");
-  background-size: cover;
+  background-repeat: no-repeat;
   background-position: center;
-  color: #fff;
-  margin: 0;
-  padding: 10px;
+  background-attachment: fixed;
+  background-size: cover;
 }
 
 body::before {
