@@ -35,7 +35,7 @@ form.addEventListener("submit", function (event) {
   // This code define the cost of each class
   const planCosts = {
     beginner: 25 * 4, // 4 weeks per month
-    intermediate: 30 * 4,
+    intermediate: 30 * 4, //ask question about price vs the ammount of lessons
     elite: 35 * 4,
   };
 
@@ -51,17 +51,22 @@ form.addEventListener("submit", function (event) {
   if (currentWeight < 66) {
     categoryMessage = "You are too Ligth to register as a contender.";
   } else if (currentWeight <= 66) {
-    categoryMessage = "You are in the Flyweight class category.";
+    categoryMessage = "You have registered into the Flyweight class category.";
   } else if (currentWeight <= 73) {
-    categoryMessage = "You are in the Ligthweight class category.";
+    categoryMessage =
+      "You have registered into the Ligthweight class category.";
   } else if (currentWeight <= 81) {
-    categoryMessage = "You are in the Ligth-Middleweight class category.";
+    categoryMessage =
+      "You have registered into the Ligth-Middleweight class category.";
   } else if (currentWeight <= 90) {
-    categoryMessage = "You are in the Middleweight class category.";
+    categoryMessage =
+      "You have registered into the Middleweight class category.";
   } else if (currentWeight <= 100) {
-    categoryMessage = "You are in Ligth-Heavyweight class category.";
+    categoryMessage =
+      "You have registered into the Ligth-Heavyweight class category.";
   } else {
-    categoryMessage = "You are in the Heavyweight class category.";
+    categoryMessage =
+      "You have registered into the Heavyweight class category.";
   }
 
   // This code shows the total monthly cost
