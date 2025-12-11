@@ -1,21 +1,20 @@
 body {
   font-family: Arial, Helvetica, sans-serif;
-  background-color: #000; 
-  color: #fff; 
+  background-color: #000;
+  color: #fff;
   margin: 0;
   padding: 20px;
 }
 
 img.mobile.display {
   width: 120px;
-  float: left; 
-  border: 3px solid red; 
+  float: left;
+  border: 3px solid red;
   border-radius: 10px;
 }
 
-
 h1 {
-  color: red; 
+  color: red;
   font-size: 2.5rem;
   text-align: center;
   margin-top: 10px;
@@ -34,7 +33,7 @@ h2 {
 }
 
 form {
-  background-color: #111; 
+  background-color: #111;
   padding: 20px;
   border-radius: 12px;
   width: 350px;
@@ -42,7 +41,7 @@ form {
 }
 
 .form-input {
-  width: 100%;
+  width: 50%;
   padding: 10px;
   margin: 8px 0 16px 0;
   background-color: #222;
@@ -82,7 +81,7 @@ label {
 }
 
 #submit-button:hover {
-  background-color: #cc0000; 
+  background-color: #cc0000;
 }
 
 .athlete-info {
@@ -101,7 +100,6 @@ label {
   min-height: 100px;
 }
 
-
 hr {
-border: 1px solid red;
+  border: 1px solid red;
 }
