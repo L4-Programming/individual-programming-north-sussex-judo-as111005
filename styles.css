@@ -6,7 +6,7 @@ body {
   padding: 20px;
 }
 
-img.mobile.display {
+img.mobile-display {
   width: 120px;
   float: left;
   border: 3px solid red;
