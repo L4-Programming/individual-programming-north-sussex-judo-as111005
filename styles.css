@@ -74,6 +74,7 @@ label {
   float: left;
   border: 3px solid red;
   border-radius: 10px;
+  margin-bottom: 1rem;
 }
 
 .training-plan-wrapper {
